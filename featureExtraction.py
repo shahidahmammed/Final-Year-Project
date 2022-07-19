@@ -1,7 +1,7 @@
 # Miss. Shahidah Kunhih Endiape Mammed
 # BSc. (Hons) in Computer Science
 # TP055203
-# Description: Data augmentation nd feature extraction from the audio files
+# Description: Data augmentation and feature extraction from the audio files
 # Starting date: 06/06/2022
 # Modified date: 18/07/2022
 
