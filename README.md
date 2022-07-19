@@ -9,9 +9,9 @@ All the required library and tools for the system is in the requirement.txt file
 
 2. On the loaded webpage, user will be able to upload or record audio and click on "Submit" to the system.
 
-3. Users can select the type of chart they want to display and clicking on "Submit".
+3. Users can select the type of chart they want and it will be displayed after clicking on "Submit".
 
-4. Users can select the number of emotions they want to reocgnize from audio and clicking on "Submit".
+4. Users can select the number of emotions they want to reocgnize from audio and it will be used after clicking on "Submit".
 
 5. To load a new audio, click on "Clear", then repeat step 2.
 
