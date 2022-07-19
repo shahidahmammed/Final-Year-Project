@@ -1,7 +1,7 @@
 # Miss. Shahidah Kunhih Endiape Mammed
 # BSc. (Hons) in Computer Science
 # TP055203
-# feature extraction from the audio files
+# Description: Implement the web interface 
 # Starting date: 12/06/2022
 # Modified date: 18/07/2022
 
@@ -50,9 +50,9 @@ def SER(audio, accuracy, numberEmotions):
     except:
         emotion = "Error...Please Upload or Record Audio!" # no audio provided
 
-    if numberEmotions == "6 emotions":
-        model = getmodel("AUGEMO6")
-        img = getChart("AUGEMO6", accuracy)
+    if numberEmotions == "6 emotions": # if number of emotions selected was 6 emotions
+        model = getmodel("AUGEMO6") # get the 6 emotions model
+        img = getChart("AUGEMO6", accuracy) # get the chart for 6 emotions
     
     elif numberEmotions == "5 emotions (excluding disgust)":
         model = getmodel("AUGEMO5")

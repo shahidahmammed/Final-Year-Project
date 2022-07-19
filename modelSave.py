@@ -1,7 +1,7 @@
 # Miss. Shahidah Kunhih Endiape Mammed
 # BSc. (Hons) in Computer Science
 # TP055203
-# feature extraction from the audio files
+# Description: Trains and saves the modules
 # Starting date: 06/06/2022
 # Modified date: 16/07/2022
 

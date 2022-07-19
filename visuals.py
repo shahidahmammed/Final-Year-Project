@@ -1,7 +1,7 @@
 # Miss. Shahidah Kunhih Endiape Mammed
 # BSc. (Hons) in Computer Science
 # TP055203
-# visualization 
+# Description: Create the charts (for feature extraction and accuracy scores)
 # Starting date: 07/07/2022
 # Modified date: 18/07/2022
 
@@ -17,35 +17,35 @@ import numpy as np
 
 # function to save all accuracy charts
 def saveCharts():
-    bestClassifiers = pickle.load(open("model/AUGEMO6_models.pickle", "rb"))
-    accuracyChart(bestClassifiers, name="AUGEMO6", namechart="For 6 Emotions")
+    bestClassifiers = pickle.load(open("model/AUGEMO6_models.pickle", "rb")) # load the 6 emotion model
+    accuracyChart(bestClassifiers, name="AUGEMO6", namechart="For 6 Emotions") # create the chart
     
-    bestClassifiers = pickle.load(open("model/AUGEMO5_models.pickle", "rb"))
+    bestClassifiers = pickle.load(open("model/AUGEMO5_models.pickle", "rb")) # load the 5 emotion model
     accuracyChart(bestClassifiers, name="AUGEMO5", namechart="For 5 Emotions")
     
-    bestClassifiers = pickle.load(open("model/AUGEMO4_models.pickle", "rb"))
+    bestClassifiers = pickle.load(open("model/AUGEMO4_models.pickle", "rb")) # load the 4 emotion model
     accuracyChart(bestClassifiers, name="AUGEMO4", namechart="For 4 Emotions")
     
-    bestClassifiers = pickle.load(open("model/AUGEMO3_models.pickle", "rb"))
+    bestClassifiers = pickle.load(open("model/AUGEMO3_models.pickle", "rb")) # load the 3 emotion model
     accuracyChart(bestClassifiers, name="AUGEMO3", namechart="For 3 Emotions")
 
 # function to save a single accuracy training and testing chart
 def accuracyChart(bestClassifiers, name="", namechart=""):
-    classifiers = []
-    accTr = []
-    accTe = []
-    for model, accTrain, accTest in bestClassifiers:
+    classifiers = [] # list for names of classiifers
+    accTr = [] # list for accuracy training scores of classifiers
+    accTe = [] # list for accuracy testing scores of classifiers
+    for model, accTrain, accTest in bestClassifiers: # loop through the classifiers stored and append to the lists
         accTr.append(accTrain)
-        accTe.append(accTest)
+        accTe.append(accTest) 
         classifiers.append(model.__class__.__name__)
 
     # training accuracy score
-    plt.figure(figsize=(14, 8))
-    plt.rc('font', size=12)
-    plt.title("Accuracy Training Dataset Score {}".format(namechart))
-    plt.ylabel("Accuracy Score")
-    plt.xlabel("Classifiers")
-    plt.bar(classifiers, accTr, color=['lightsteelblue', 'slateblue', 'tan', 'salmon', 'seagreen'])
+    plt.figure(figsize=(14, 8)) # figure size
+    plt.rc('font', size=12) # figure font 
+    plt.title("Accuracy Training Dataset Score {}".format(namechart)) # figure title
+    plt.ylabel("Accuracy Score") # y-axis figure label
+    plt.xlabel("Classifiers") # x-axis figure label
+    plt.bar(classifiers, accTr, color=['lightsteelblue', 'slateblue', 'tan', 'salmon', 'seagreen']) # create bar chart 
     if not os.path.isdir("visuals/accuracyScore"): # if there is no folder create
         os.mkdir("visuals/accuracyScore")
     plt.savefig("visuals/accuracyScore/{}accuracyTrain.png".format(name)) # saves the plot
