@@ -1,0 +1,8 @@
+librosa==3.0.17
+numpy==1.22.4
+soundfile==0.10.3
+scikit-learn==0.24.2
+pyaudio==0.2.11
+pickle==4.0
+matplotlib.pyplot==3.5.2
+gradio==3.0.17
