@@ -9,7 +9,7 @@ UC3F2111CS
 This is a Proposed Speech Emotion Reocgnition System for Culturally Diverse English Speakers. This system reocgninzes happy, sad, fear, angry, neutral, and disgust emotions.
 
 # Requirements  
-All the required library and tools for the system is in the requirements.txt file and FFmpeg must be installed and added to system environment variables. 
+All the required library and tools for the system is in the requirements.txt file and FFmpeg must be installed and added to system environment variables. Use the command below in the terminal to install the libraries.
 ```pip install -r requirements.txt```
 
 
