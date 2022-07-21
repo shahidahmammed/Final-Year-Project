@@ -83,6 +83,6 @@ prediction = gr.outputs.Label(label="Emotion Recognized is") # output of uploade
 predictionACC = gr.outputs.Image(label="Chart produced") # output of chart selected
 
 # interfaces
-description = "A Speech Emotion Recognition for Culturally Diverse English Speakers to recognize Happy, Sad, Fear, Angry, Neutral, and Disgust emotions."
+description = "A Speech Emotion Recognition System for Culturally Diverse English Speakers to recognize Happy, Sad, Fear, Angry, Neutral, and Disgust emotions."
 uploadAudio = gr.Interface(fn=SER, inputs=[userAudio, imageAccuracy, numberEmotions], outputs=[prediction, predictionACC], title=heading, description=description, allow_flagging="never") # upload interface
 uploadAudio.launch() # launches interface on web-browser
