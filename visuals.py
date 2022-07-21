@@ -1,6 +1,7 @@
-# Miss. Shahidah Kunhih Endiape Mammed
+# Miss. Shahidah Kunhi Endiape Mammed
 # BSc. (Hons) in Computer Science
 # TP055203
+# UC3F2111CS
 # Description: Create the charts (for feature extraction and accuracy scores)
 # Starting date: 07/07/2022
 # Modified date: 18/07/2022

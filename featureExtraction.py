@@ -1,6 +1,7 @@
-# Miss. Shahidah Kunhih Endiape Mammed
+# Miss. Shahidah Kunhi Endiape Mammed
 # BSc. (Hons) in Computer Science
 # TP055203
+# UC3F2111CS
 # Description: Data augmentation and feature extraction from the audio files
 # Starting date: 06/06/2022
 # Modified date: 18/07/2022

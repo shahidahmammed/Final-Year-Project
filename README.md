@@ -1,3 +1,10 @@
+# Student Details
+Miss. Shahidah Kunhi Endiape Mammed
+BSc. (Hons) in Computer Science
+TP055203
+UC3F2111CS
+
+
 # Introduction
 This is a Proposed Speech Emotion Reocgnition System for Culturally Diverse English Speakers. This system reocgninze happy, sad, fear, angry, neutral, and disgust.
 
