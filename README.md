@@ -6,7 +6,7 @@ UC3F2111CS
 
 
 # Introduction
-This is a Proposed Speech Emotion Reocgnition System for Culturally Diverse English Speakers. This system reocgninzes happy, sad, fear, angry, neutral, and disgust.
+This is a Proposed Speech Emotion Reocgnition System for Culturally Diverse English Speakers. This system reocgninzes happy, sad, fear, angry, neutral, and disgust emotions.
 
 # Requirements  
 All the required library and tools for the system is in the requirements.txt file and FFmpeg must be installed and added to system environment variables
